@@ -1,0 +1,41 @@
+{{! BUTTON }}
+<button
+  type="button"
+  class="btn btn-success"
+  data-bs-toggle="modal"
+  data-bs-target="#modalProductos"
+>
+  <i class="fa-solid fa-cart-shopping fs-1"></i>
+</button>
+
+{{! MODAL }}
+<div
+  class="modal fade"
+  id="modalProductos"
+  tabindex="-1"
+  aria-labelledby="modalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-center">
+        <h2
+          class="modal-title text-center fs-2"
+          id="modalLabel"
+        >Productos en el carrito:</h2>
+      </div>
+      <div class="modal-body">
+        <div class="text-center" id="productosContainer"></div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary text-white"
+          data-bs-dismiss="modal"
+        >
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

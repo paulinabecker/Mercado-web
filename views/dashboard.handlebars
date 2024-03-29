@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Web</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+    {{> menu}}
+    {{> bienvenida}}
+    {{> producto}}
+    <script src="https://kit.fontawesome.com/26f1f0d8af.js" crossorigin="anonymous"></script>
+    <script src="/css/bootstrap.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.card-producto').click(function(event) {
+                if (!$(this).prop('disabled')) {
+                    let imgSrc = $(this).find('img').attr('src');
+                    let imgElement = $('<img>').attr('src', imgSrc).addClass('p-3 w-25');
+                    $('#productosContainer').append(imgElement);
+                    $(this).prop('disabled', true);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
