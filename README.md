@@ -1,6 +1,7 @@
 # Mercado-web
 
 Descripción
+
 El Mini Market “Come Sano, Come Fresco Spa” está interesado en contratar un freelancer para
 que desarrolle una aplicación en donde puedan ofrecer y vender sus alimentos de forma
 online en la web. No obstante, por su modelo de negocio han advertido que constantemente
